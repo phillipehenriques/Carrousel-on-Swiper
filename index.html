@@ -9,7 +9,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    </section>
+
         <!-- Slider main container -->
+        
     <div class="swiper">
         <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -36,5 +42,13 @@
   </div>
   
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400, // velocidade do swipe
+            spaceBetween: 100, // espaço entre slides
+            slidesPerView: 1, // quantidade de slides por vez
+        });
+
+    </script>
     </body>
 </html>
